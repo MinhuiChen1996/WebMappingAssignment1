@@ -9,7 +9,7 @@ Use this as an example to make a 'secrets.py' file in your project directory (be
 
 def get_secrets():
     SECRETS = {
-        'MY_DOMAIN_NAME': 'tudublinwebmapping.tk',
+        'MY_DOMAIN_NAME': 'webmap.tk',
         'DOCKER_IMAGE': 'minhui1996/webmappingca',
         'DOCKER_COMPOSE_FILE': 'docker-compose.yml',
         'NGINX_CONF': 'django_nginx.conf',

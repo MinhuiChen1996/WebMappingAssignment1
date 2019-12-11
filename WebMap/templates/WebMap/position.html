@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Your Position</title>
+</head>
+<body>
+<script type="text/javascript">
+    function getLocationConstant() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
+        } else {
+            alert("Your browser or device doesn't support Geolocation");
+        }
+    }
+
+    // If we have a successful location update
+    function onGeoSuccess(event) {
+        document.getElementById("Latitude").value = event.coords.latitude;
+        document.getElementById("Longitude").value = event.coords.longitude;
+    }
+
+    // If something has gone wrong with the geolocation request
+    function onGeoError(event) {
+        alert("Error code " + event.code + ". " + event.message);
+    }
+</script>
+<form method = 'post' >
+{{lf.as_p}}
+
+<br>
+    <input type="button" value="Get Location" onclick="getLocationConstant()" />
+<br><br>
+<input type="submit" value = "Submit" name="position" />
+</form>
+<Button type="submit"  onclick="location.href='Home'">Go to Shop Map</Button>
+</body>
+</html>

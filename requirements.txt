@@ -1,5 +1,5 @@
 -i https://pypi.org/simple
-Django==2.2.7
+Django==2.2.24
 django-bootstrap3==11.1.0
 django-cors-headers==3.1.1
 django-crispy-forms==1.8.0

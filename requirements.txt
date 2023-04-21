@@ -20,5 +20,5 @@ pytz==2019.3
 query-string==2019.4.13
 request==2019.4.13
 six==1.13.0
-sqlparse==0.3.0
+sqlparse==0.4.4
 uwsgi==2.0.18
